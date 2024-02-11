@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automotors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/animated-accordion.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container__header">
+            <div class="logo">
+                <button class="logo__btn" onclick="btn_list()"><img src="img/logo3.png" alt="" class="logo3"></button>
+                <div class="logo__menu">
+                    <ul class="logo__list">
+                        <li class="logo__item">Automotors</li>
+                        <li class="logo__item"><img onclick="dark()" src="img/logo2.png" alt=""></li>
+                        <li class="logo__item"><img onclick="light()" src="img/logo.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item "><a href="index.html" class="header__link">Главная</a></li>
+                    <li class="header__item "><a href="basket.html" class="header__link">Корзина</a></li>
+                    <li class="header__item "><a href="dlc.html" class="header__link">Каталог</a></li>
+                    <li class="header__item "><a href="aboutus.html" class="header__link">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="burger hide" onclick="burger()">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="dlc">Предложения</h1>
+            <div class="catalog">
+                <div class="game">
+                    <h1 class="named">Atomic heard</h1>
+                    <img src="img/6.jpg" alt="" class="catalog__game">
+                    <button onclick="buy()" id="btn__buing" class="catalog__button">Добавить в корзину <p class="product__price">2000&#8381</p></button>
+                </div>
+                <div class="game">
+                    <h1 class="named">Инстинкт истребления</h1>
+                    <img src="img/5.png" alt="" class="catalog__game">
+                    <button onclick="buy()" id="btn__buing" class="catalog__button">Добавить в корзину <p class="product__price">900&#8381</p></button>
+                </div>
+                <div class="game">
+                    <h1 class="named">Узник лимбо</h1>
+                    <img src="img/4.png" alt="" class="catalog__game">
+                    <button onclick="buy()" id="btn__buing" class="catalog__button">Добавить в корзину <p class="product__price">1100&#8381</p></button>
+                </div>
+                <div class="game">
+                    <h1 class="named">Atomic heard + 2  DLC</h1>
+                    <img src="img/3.jpg" alt="" class="catalog__game">
+                    <button onclick="buy()" id="btn__buing" class="catalog__button">Добавить в корзину <p class="product__price">3200&#8381</p></button>
+                </div>
+            </div>
+        </section>
+        <section class="basket">
+            <div class="basket__container">
+                <a href="" onclick="spawning()" class="basket__link">
+                    <img src="img/basketcon.png" alt="" class="basket__icon">
+                </a>
+                <p class="price__cost">0&#8381</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/logobtn.js"></script>
+    <script src="scripts/animated-accordion.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/video_button.js"></script>
+</body>
+
+</html>

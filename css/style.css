@@ -1,0 +1,387 @@
+body {
+    background: #8E9AAB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+footer {
+    background: #222529;
+    padding: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.product__text {
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+.product__img {
+    width: 1024px;
+    height: 800px;
+
+}
+
+.product__title {
+    width: 231px;
+    height: 74px;
+    color: #67000C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product__button {
+    background-color: orange;
+    width: 490px;
+    height: 105px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    font-size: 40px;
+}
+
+.itc-slider {
+    width: 1024px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transform: translateX(-70%) scale(0.3);
+    position: relative;
+    z-index: -1;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.logo__btn {
+    width: 64px;
+    height: 64px;
+    background: none;
+    border: none;
+}
+
+.back {
+    transform: translateX(0%) scale(1);
+    z-index: 1;
+    opacity: 1;
+}
+
+.logo3 {
+    border: none;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+
+}
+
+.header__item {
+    margin-right: 45px;
+}
+
+.burger__line {
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 5px;
+}
+
+.burger {
+    display: none;
+}
+
+.accordion {
+    margin-left: 70px;
+}
+
+#atomic__heart {
+    width: 100%;
+}
+
+.video {
+    position: relative;
+}
+
+.video__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px;
+}
+
+.video__button {
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    border: #1071FF 1px solid;
+    color: #1071FF;
+    padding: 3px;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+.video__button:hover {
+    top: 5px;
+    transition: .5s;
+    color: #10FF58;
+    border: #10FF58 1px solid;
+    border-radius: 10px;
+}
+
+.video__button:active {
+    color: #000;
+    border: #1A1A1A 1px solid;
+    transition: .07s;
+    background-color: #FFF;
+}
+
+.basket__container {
+    background: none;
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+    order: -1;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.price__cost {
+    order: -1;
+}
+
+.gds__list {
+    list-style: none; 
+}
+
+.gds__item {
+    border: 2px solid #000;
+}
+
+.gds__text {
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+.gds_img{
+    width: 700px;
+    height: 700px;
+    margin: auto 250px;
+}
+
+.gds_name{
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+    margin: auto 250px;
+}
+
+.gds_text{
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+    margin: auto 250px;
+}
+
+.button_delete{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    margin: auto 560px;
+}
+
+
+
+
+
+.catalog__game {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.catalog {
+    max-width: 1478px;
+    flex-shrink: 0;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+    flex-shrink: 0;
+}
+
+.game {
+    width: 500px;
+    margin: 30px 0px 20px 50px;
+    border: 2px solid #000;
+}
+
+.catalog__button{
+    background-color: orange;
+    width: 200px;
+    height: 70px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+
+.hide1{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background: rgba(56, 56, 56, 0.988);
+        top: 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        z-index: 3;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+
+    .header__item {
+        margin: auto 0;
+    }
+
+    .burger {
+        display: block;
+        z-index: 4;
+    }
+
+    .itc-slider-item {
+        width: 500px;
+        height: 400px;
+    }
+
+    .itc-slider {
+        max-width: 500px;
+        height: 400px;
+    }
+
+    .product__img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .product__text {
+        font-size: 15px;
+        width: 800px;
+        height: 200px;
+    }
+
+    .product__button {
+        background-color: orange;
+        width: 300px;
+        height: 50px;
+        flex-shrink: 0;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50px;
+        font-size: 25px;
+    }
+
+    .accordion {
+        width: 800px;
+    }
+
+    .container {
+        width: 800px;
+    }
+
+    .map1 {
+        width: 500px;
+    }
+
+    .hide {
+        transform: translateX(0%);
+    }
+
+    .aboutus__text{
+        width: 800px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automotors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/animated-accordion.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container__header">
+            <div class="logo">
+                <button class="logo__btn" onclick="btn_list()"><img src="img/logo3.png" alt="" class="logo3"></button>
+                <div class="logo__menu">
+                    <ul class="logo__list">
+                        <li class="logo__item">Automotors</li>
+                        <li class="logo__item"><img onclick="dark()" src="img/logo2.png" alt=""></li>
+                        <li class="logo__item"><img onclick="light()" src="img/logo.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item "><a href="index.html" class="header__link">Главная</a></li>
+                    <li class="header__item "><a href="basket.html" class="header__link">Корзина</a></li>
+                    <li class="header__item "><a href="dlc.html" class="header__link">Каталог</a></li>
+                    <li class="header__item "><a href="aboutus.html" class="header__link">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="burger hide" onclick="burger()">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="video">
+            <video autoplay muted loop id="atomic__heart">
+                <source src="video/atomic heart.mp4" type="video/mp4" >
+            </video>
+            <div class="video__content">
+                <container class="button__video"></container>
+                    <button onclick="pause()"  class="video__button">pause</button>
+                    <button onclick="mute()" class="video__button">mute</button>
+                    <button onclick="prev()" class="video__button">prev</button>
+                    <button onclick="next()" class="video__button">next</button>
+                </container>
+            </div>
+        </section>
+        <section class="product ">
+            <div class="container">
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img class="product__img" src="img/1.jpg" alt="">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img class="product__img" src="img/2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+                <div class="text__poduct">
+                    <p class="product__text">Atomic Heart - это уникальная игра, которая сочетает в себе постапокалиптический шутер, ролевые элементы и визуальный стиль Советского Союза. В этой игре ты попадаешь в альтернативную реальность, где ты должен сражаться с агрессивными роботами, мутантами и загадочными существами. Ты можешь использовать разнообразное оружие и специальные способности, которые называются полимерами, чтобы выжить в этом опасном мире.
+                        На нашем сайте ты можешь приобрести различные продукты, связанные с игрой Atomic Heart. Мы предлагаем тебе:
+                    </p>
+                    <p class="product__text">- Ограниченное издание игры, которое включает в себя стальную книгу, артбук, металлический постер, игру на платформе твоего выбора и дополнение Labour & Science с новыми скинами для оружия.</p>
+                    <p class="product__text">- Оригинальный саундтрек игры на виниле или в цифровом формате.</p>
+                    <p class="product__text">- Фигурки, одежду, постеры и другие аксессуары с символикой игры.</p>
+                    <p class="product__text">Не упусти свой шанс окунуться в захватывающий мир Atomic Heart и получить эксклюзивные товары по выгодным ценам. Заказывай сейчас и получи бесплатную доставку по всему миру. Спасибо, что выбрал наш сайт. Желаем тебе приятных покупок и незабываемых впечатлений от игры</p>
+                </div>
+                <button onclick="buy()" id="btn__buing" class="product__button">Добавить в корзину <p class="product__price">3200&#8381</p></button>
+                
+                    
+                    <section class="basket">
+                        <div class="basket__container">
+                            <a href="" onclick="spawning()" class="basket__link">
+                                <img src="img/basketcon.png" alt="" class="basket__icon">
+                            </a>
+                            <p class="price__cost">0&#8381</p>
+                        </div>
+                    </section>
+                
+                <div class="accordion " id="accordion-1">
+                    <div class="accordion__item ">
+                        <div class="accordion__header ">
+                            Atomic Heart
+                        </div>
+                        <div class="accordion__body ">
+                            Atomic Heart - это криптоэпическая FPS-игра от студии Mundfish. Действие игры разворачивается в альтернативной Восточной Европе в 1955 году, где игроку предстоит исследовать секретную советскую лабораторию, полную опасных машин и мутантов. Главным героем игры является агент "П-3", который отправляется на миссию, чтобы разобраться в произошедшем и выявить истину. Atomic Heart обещает захватывающий геймплей, наполненный экшеном и загадками, поразительные визуальные эффекты и уникальную атмосферу.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+                <h2 class="">Наши сервисы</h2>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f9443962e0bd1d099ec2684b00410c14f9e9b7e4962411ce0af075ab42617d4&amp;source=constructor"
+                    class="map1" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/logobtn.js"></script>
+    <script src="scripts/animated-accordion.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/video_button.js"></script>
+</body>
+
+</html>
